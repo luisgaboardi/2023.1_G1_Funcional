@@ -18,7 +18,7 @@
 | 20/0028677  |  Vitor Manoel Aquino de Brito |
 
 ## Sobre 
-Descreva o seu projeto em linhas gerais. 
+Descreva o seu projeto em linhas gerais.
 Use referências, links, que permitam conhecer um pouco mais sobre o projeto.
 Capriche nessa seção, pois ela é a primeira a ser lida pelos interessados no projeto.
 
