@@ -1,0 +1,51 @@
+cabal-version:      3.0
+name:               hangman
+version:            0.1
+synopsis:
+    Este é um Jogo da Forca desenvolvido no primeiro módulo - Paradigma Funcional - em Paradigmas de Programação.
+
+-- A longer description of the package.
+-- description:
+homepage:
+
+-- A URL where users can report bugs.
+-- bug-reports:
+license:            MIT
+license-file:       LICENSE
+author:             Grupo 1
+maintainer:
+
+-- A copyright notice.
+-- copyright:
+category:           Game
+extra-source-files:
+    CHANGELOG.md
+    README.md
+
+library
+    exposed-modules:  HangmanSay
+
+    -- Modules included in this library but not exported.
+    -- other-modules:
+
+    -- LANGUAGE extensions used by modules in this package.
+    -- other-extensions:
+    build-depends:    base ^>=4.16.4.0
+    hs-source-dirs:   src
+    default-language: Haskell2010
+
+executable hangman
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    -- other-modules:
+
+    -- LANGUAGE extensions used by modules in this package.
+    -- other-extensions:
+    build-depends:
+        base ^>=4.16.4.0,
+        haskell-say ^>=1.0.0.0,
+        hangman
+
+    hs-source-dirs:   app
+    default-language: Haskell2010
