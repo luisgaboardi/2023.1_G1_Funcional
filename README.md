@@ -37,6 +37,21 @@ Explique como usar seu projeto.
 Procure ilustrar em passos, com apoio de telas do software, seja com base na interface gráfica, seja com base no terminal.
 Nessa seção, deve-se revelar de forma clara sobre o funcionamento do software.
 
+### 1. Verifique se o GHCup está instalado na seu computador - [Guia de Instalação GHCup](https://www.haskell.org/ghcup)
+```
+cabal --version
+```
+
+### 2. Entre na pasta do jogo
+```
+cd 2023.1_G1_Funcional_Hangman
+```
+
+### 3. Execute a aplicação
+```
+cabal run
+```
+
 ## Vídeo
 Adicione 1 ou mais vídeos com a execução do projeto.
 Procure: 
