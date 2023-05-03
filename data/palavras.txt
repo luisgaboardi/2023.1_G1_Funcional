@@ -1,0 +1,30 @@
+Arquitetura
+Código-fonte
+Depuração
+Desenvolvimento ágil
+Documentação
+Engenharia de requisitos
+Ferramentas de desenvolvimento
+Gerenciamento de configuração
+Integração contínua
+Manutenção de software
+Metodologias de desenvolvimento
+Modelo em cascata
+Paradigmas de programação
+Planejamento de projeto
+Qualidade de software
+Refatoração
+Revisão de código
+Scrum
+Segurança de software
+Testes de aceitação
+Testes de integração
+Testes de performance
+Testes de unidade
+Testes funcionais
+Testes manuais
+Testes automatizados
+UML
+Usabilidade de software
+Verificação e validação
+Versionamento de software
