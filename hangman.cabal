@@ -23,7 +23,7 @@ extra-source-files:
     README.md
 
 library
-    exposed-modules:  HangmanSay, Words, Match
+    exposed-modules:  HangmanSay, Words, Match, Logic
 
     -- Modules included in this library but not exported.
     -- other-modules:
@@ -32,6 +32,8 @@ library
     -- other-extensions:
     build-depends:    base ^>=4.16.4.0,
                       random == 1.2.1.1,
+                      directory == 1.3.6.2,
+                      filepath == 1.4.2.2,
     hs-source-dirs:   src
     default-language: Haskell2010
 
