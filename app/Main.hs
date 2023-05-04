@@ -3,7 +3,7 @@ module Main where
 import HangmanSay (hangmanSay)
 import Words (getPalavraAleatoria, escolheTema)
 import Match (novaPartida)
-import Logic (hangman)
+import Logic (jogo)
 
 main :: IO ()
 main = do
@@ -21,6 +21,6 @@ main = do
 
  -- Chamada da função hangman do módulo Logic para iniciar o jogo
 
-  hangman palavraSecreta
+  jogo palavraSecreta
 
   print partida
