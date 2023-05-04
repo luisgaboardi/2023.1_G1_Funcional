@@ -1,20 +1,25 @@
 module Logic where
 
+import Data.Char (toUpper)
+
 -- | Função que inicia o jogo
 jogo :: String -> IO ()
 jogo palavraSecreta = do 
                 putStrLn "Tente adivinhar a palavra: "
-                jogar palavraSecreta
+                jogar palavra
+                    where palavra = map toUpper palavraSecreta
+                
 
 -- | Função principal que recebe as tentativas do usuário até acertar a palavra
 jogar :: String -> IO ()
 jogar palavraSecreta = 
    do putStr "? "
       palavraTeste <- getLine
-      if palavraTeste == palavraSecreta then
+      let palavra = map toUpper palavraTeste
+      if palavra == palavraSecreta then
          putStrLn "Parabens! Voce acertou!"
       else
-         do putStrLn (match palavraSecreta palavraTeste)
+         do putStrLn (match palavraSecreta palavra)
             jogar palavraSecreta
 
 
