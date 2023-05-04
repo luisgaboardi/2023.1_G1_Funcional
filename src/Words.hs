@@ -4,41 +4,37 @@ import System.Random (randomRIO)
 import System.Directory (doesFileExist, getDirectoryContents)
 import System.FilePath ((</>), takeBaseName)
 import Control.Monad (filterM)
+import Text.Read(readMaybe)
 
-getAllFilePaths :: FilePath -> IO [FilePath]
-getAllFilePaths path = do
+getPathArquivosTexto :: FilePath -> IO [FilePath]
+getPathArquivosTexto path = do
     content <- getDirectoryContents path
     let filePathList = map (path </>) content
     files <- filterM doesFileExist filePathList
     return files
 
-getFileNames :: [FilePath] -> IO [(Int, String)]
-getFileNames filePaths = return $ zip [1..] (map takeBaseName filePaths)
+getNomesArquivos :: [FilePath] -> IO [(Int, String)]
+getNomesArquivos pathsArquivos = return $ zip [1..] (map takeBaseName pathsArquivos)
 
-chooseFileFromFolder :: FilePath -> IO FilePath
-chooseFileFromFolder dir = do
-    filePaths <- getAllFilePaths dir
-    fileNames <- getFileNames filePaths
-    let numFiles = length filePaths
-    mapM_ (\(i, fileName) -> putStrLn (show i ++ ". " ++ fileName)) fileNames
-    putStrLn "Selecione o número do arquivo que você deseja: "
-    input <- getValidInput numFiles
-    let selectedFilePath = filePaths !! (input - 1)
-    return selectedFilePath
-
-getValidInput :: Int -> IO Int
-getValidInput maxInput = do
+getInputValido :: Int -> IO Int
+getInputValido qtdArquivos = do
     input <- getLine
     case readMaybe input of
-        Just n | n >= 1 && n <= maxInput -> return n
+        Just n | n >= 1 && n <= qtdArquivos -> return n
         _ -> do
             putStrLn "Entrada inválida. Tente novamente."
-            getValidInput maxInput
+            getInputValido qtdArquivos
 
-readMaybe :: Read a => String -> Maybe a
-readMaybe s = case reads s of
-    [(x,"")] -> Just x
-    _ -> Nothing
+escolheTema :: FilePath -> IO FilePath
+escolheTema dir = do
+    pathsArquivos <- getPathArquivosTexto dir
+    nomesArquivos <- getNomesArquivos pathsArquivos
+    let qtdArquivos = length pathsArquivos
+    mapM_ (\(i, nomeArquivo) -> putStrLn (show i ++ ". " ++ nomeArquivo)) nomesArquivos
+    putStrLn "Selecione o número do arquivo que você deseja: "
+    input <- getInputValido qtdArquivos
+    let pathTemaSelecionado = pathsArquivos !! (input - 1)
+    return pathTemaSelecionado
 
 getPalavraAleatoria :: FilePath -> IO String
 getPalavraAleatoria path = do

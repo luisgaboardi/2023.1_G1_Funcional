@@ -1,7 +1,7 @@
 module Main where
 
 import HangmanSay (hangmanSay)
-import Words (getPalavraAleatoria, chooseFileFromFolder)
+import Words (getPalavraAleatoria, escolheTema)
 import Match (novaPartida)
 
 main :: IO ()
@@ -9,8 +9,8 @@ main = do
 
   hangmanSay "Hangman!"
 
-  -- Chamada da função chooseFileFromFolder do módulo Words para obter o tema de palavras escolhido pelo usuário
-  categoria <- chooseFileFromFolder "./data"
+  -- Chamada da função escolheTema do módulo Words para obter o tema de palavras escolhido pelo usuário
+  categoria <- escolheTema "./data"
 
   -- Chamada da função getPalavraAleatoria do módulo Words para obter uma palavra aleatória do arquivo palavras.txt
   palavraSecreta <- getPalavraAleatoria categoria
