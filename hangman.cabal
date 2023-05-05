@@ -23,7 +23,7 @@ extra-source-files:
     README.md
 
 library
-    exposed-modules:  Interface, Words, Match, Logic
+    exposed-modules:  Interface, Words, Logic
 
     -- Modules included in this library but not exported.
     -- other-modules:

@@ -19,13 +19,9 @@ jogar palavraSecreta estadoAtual letrasErradas chances = do
     if (chances == 0) then telaFim palavraSecreta 1
     else do
         logoJogo
-        
         imprimirLetrasErradas $ filter (`notElem` palavraSecreta) letrasErradas
-        
         imprimirChances chances
-
         imprimirLetrasEncontradas estadoAtual
-        
 
         -- verifica se o usuário acertou a palavra
         if all (`elem` estadoAtual) palavraSecreta then
