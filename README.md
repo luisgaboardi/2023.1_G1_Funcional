@@ -91,7 +91,7 @@ Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 |  Gustavo Duarte Moreira        |Desenvolvimento do módulo de temas com leitura do arquivo; auxílio no móludo de lógica; Documentação e aperfeiçoamento do README.md | Excelente|
 |  João Victor de Oliveira Matos |Criação do esqueleto do projeto, criação da identidade visual, implemetação da interface e interação, implementação dos níveis de dificuldade, auxílio no módulo de lógica, auxílio na documentação e readme | Excelente |
 |  Kathlyn Lara Murussi          | | |
-|  Luís Guilherme Gaboardi Lins  | | |
+|  Luís Guilherme Gaboardi Lins  | Participamento no levantamento e decisão da proposta do projeto | Ruim |
 |  Thiago Aparecido Lopes Santos | Desenvolvimento da escolha de temas e verificação de inputs válidos no módulo Words | Excelente |
 |  Thiago Siqueira Gomes         | | |
 |  Victor Hugo Carvalho Silva    | | |
