@@ -5,6 +5,7 @@ import System.Directory (doesFileExist, getDirectoryContents)
 import System.FilePath ((</>), takeBaseName)
 import Control.Monad (filterM)
 import Text.Read(readMaybe)
+import System.IO
 
 getPathArquivosTexto :: FilePath -> IO [FilePath]
 getPathArquivosTexto path = do
@@ -30,9 +31,9 @@ escolheTema dir = do
     pathsArquivos <- getPathArquivosTexto dir
     nomesArquivos <- getNomesArquivos pathsArquivos
     let qtdArquivos = length pathsArquivos
-    putStrLn "Arquivos: "
+    putStrLn "Temas: "
     mapM_ (\(i, nomeArquivo) -> putStrLn ("[" ++ show i ++ "] " ++ nomeArquivo)) nomesArquivos
-    putStrLn "\nSelecione o número do arquivo que você deseja: "
+    putStrLn "\nSelecione o número do tema que você deseja: "
     input <- getInputValido qtdArquivos
     let pathTemaSelecionado = pathsArquivos !! (input - 1)
     return pathTemaSelecionado
@@ -43,3 +44,20 @@ getPalavraAleatoria path = do
     let palavras = lines content
     index <- randomRIO (0, length palavras - 1)
     return $ palavras !! index
+
+getPalavraEscondida :: IO String
+getPalavraEscondida = do
+    putStrLn "\nDigite a palavra para seu oponente tentar adivinhar de acordo com o tema escolhido:"
+    hSetEcho stdin False 
+    palavra <- getLine 
+    hSetEcho stdin True  
+    return palavra
+
+escolheModoDeJogo :: IO Int
+escolheModoDeJogo = do
+    putStrLn "\nModos de jogo:"
+    putStrLn "[1] Single player"
+    putStrLn "[2] Multiplayer"
+    putStrLn "\nSelecione o número do modo de jogo que você deseja: "
+    modoJogo <- getInputValido 2
+    return modoJogo
