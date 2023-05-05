@@ -1,4 +1,4 @@
-# NomeDoProjeto(Criar um nome)
+# Jogo da Forca
 
 **Disciplina**: FGA0210 - PARADIGMAS DE PROGRAMAÇÃO - T01 <br>
 **Nro do Grupo**: G1<br>
@@ -23,12 +23,13 @@ O jogo da forca é um jogo de adivinhação de palavras em que um jogador escolh
 O projeto é uma implementação do jogo da forca em Haskell, utilizando conceitos como entrada e saída de dados, manipulação de strings, listas e funções recursivas. A escolha da palavra secreta é feita a partir de uma lista de palavras em português previamente definida, utilizando o modulo Words que contém uma função que seleciona uma palavra de forma aleatória.
 
 ## Screenshots
-![Screenshot from 2023-05-05 00-55-51](https://user-images.githubusercontent.com/32913216/236375321-48245e61-7103-4fdd-957c-1bf97f3fb7b0.png)
 
-![Screenshot from 2023-05-05 00-57-13](https://user-images.githubusercontent.com/32913216/236375307-b2d07d4f-f034-48ce-aaf6-6e5d58704bb6.png)
-
-![teste](https://user-images.githubusercontent.com/32913216/236376613-ac7e9354-919a-43cd-84e6-4bdecbeaddd7.gif)
-
+![Screenshot from 2023-05-05 05-56-52](https://user-images.githubusercontent.com/69691521/236421181-8c20954a-602f-4336-9960-94f43e694388.png)
+![Screenshot from 2023-05-05 05-57-01](https://user-images.githubusercontent.com/69691521/236421208-9d4371cb-bd5e-436e-9eb3-402ab9114cc4.png)
+![Screenshot from 2023-05-05 05-57-11](https://user-images.githubusercontent.com/69691521/236421216-cf557f6a-dd67-4cb6-afbd-ca7b4399285b.png)
+![Screenshot from 2023-05-05 05-59-19](https://user-images.githubusercontent.com/69691521/236421227-df1708ba-2eea-4e7e-bbd6-3e2ab40fe459.png)
+![Screenshot from 2023-05-05 05-59-39](https://user-images.githubusercontent.com/69691521/236421236-efef4390-6be9-414f-ab72-2628631e250e.png)
+![Peek 2023-05-05 06-06](https://user-images.githubusercontent.com/69691521/236421292-c4b9f496-c2fb-491b-baca-dcc0958699d8.gif)
 
 ## Instalação 
 **Linguagens**: Haskell<br>
@@ -94,7 +95,7 @@ Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 | -- | -- | -- |
 |  Douglas Farias de Castro      | | |
 |  Gustavo Duarte Moreira        |Desenvolvimento do módulo de temas com leitura do arquivo; auxílio no móludo de lógica; Documentação e aperfeiçoamento do README.md | Excelente|
-|  João Victor de Oliveira Matos | | |
+|  João Victor de Oliveira Matos |Criação do esqueleto do projeto, criação da identidade visual, implemetação da interface e interação, implementação dos níveis de dificuldade, auxílio no módulo de lógica, auxílio na documentação e readme | Excelente |
 |  Kathlyn Lara Murussi          | | |
 |  Luís Guilherme Gaboardi Lins  | | |
 |  Thiago Aparecido Lopes Santos | | |
