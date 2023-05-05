@@ -12,3 +12,4 @@ data Partida = Partida {
 novaPartida :: Int -> String -> [Char] -> Partida
 novaPartida n chances letrasEscolhidas = Partida n letrasEscolhidas [] palavra
   where palavra = map toUpper chances
+

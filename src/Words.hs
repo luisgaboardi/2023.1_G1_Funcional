@@ -30,8 +30,9 @@ escolheTema dir = do
     pathsArquivos <- getPathArquivosTexto dir
     nomesArquivos <- getNomesArquivos pathsArquivos
     let qtdArquivos = length pathsArquivos
-    mapM_ (\(i, nomeArquivo) -> putStrLn (show i ++ ". " ++ nomeArquivo)) nomesArquivos
-    putStrLn "Selecione o número do arquivo que você deseja: "
+    putStrLn "Arquivos: "
+    mapM_ (\(i, nomeArquivo) -> putStrLn ("[" ++ show i ++ "] " ++ nomeArquivo)) nomesArquivos
+    putStrLn "\nSelecione o número do arquivo que você deseja: "
     input <- getInputValido qtdArquivos
     let pathTemaSelecionado = pathsArquivos !! (input - 1)
     return pathTemaSelecionado
