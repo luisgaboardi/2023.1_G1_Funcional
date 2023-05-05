@@ -3,6 +3,7 @@ module Interface where
 import System.Console.ANSI
 import System.Exit(exitSuccess)
 
+
 logoJogo :: IO ()
 logoJogo = do
   clearFromCursorToScreenBeginning
@@ -27,3 +28,14 @@ telaFim palavraSecreta tipo = do
   putStr "A palavra era "
   putStrLn palavraSecreta
   exitSuccess
+
+
+imprimirLetrasErradas :: String -> IO ()
+imprimirLetrasErradas letrasErradasFiltradas = do
+  setSGR [SetColor Foreground Vivid White]
+  putStrLn "logoJogo"
+  setSGR [SetColor Background Vivid Red]
+  putStr "Letras erradas: "
+  putStr letrasErradasFiltradas
+  setSGR [Reset]
+  putStrLn ""

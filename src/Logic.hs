@@ -4,7 +4,7 @@ import System.Console.ANSI
 import System.Exit(exitSuccess)
 
 import Data.Char (toUpper)
-import Interface (logoJogo, telaFim)
+import Interface (logoJogo, telaFim, imprimirLetrasErradas)
 import Words (getInputValido)
 
 -- | Função que inicia o jogo
@@ -19,13 +19,7 @@ jogar palavraSecreta estadoAtual letrasErradas chances = do
     if (chances == 0) then telaFim palavraSecreta 1
     else do
         -- imprime as letras erradas
-        setSGR [SetColor Foreground Vivid White]
-        logoJogo
-        setSGR [SetColor Background Vivid Red]
-        putStr "Letras erradas: "
-        putStr $ filter (`notElem` palavraSecreta) letrasErradas
-        setSGR [Reset]
-        putStr "\n"
+        imprimirLetrasErradas $ filter (`notElem` palavraSecreta) letrasErradas
         
         -- imprime quantidade de chances
         setSGR [SetColor Foreground Vivid White]
