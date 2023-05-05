@@ -1,14 +1,13 @@
 module Main where
 
-import HangmanSay (hangmanSay)
+import Interface (logoJogo)
 import Words (getPalavraAleatoria, escolheTema)
 import Match (novaPartida)
-import Logic (jogo)
+import Logic (jogo, setDificuldade)
 
 main :: IO ()
 main = do
-
-  hangmanSay "Hangman!"
+  logoJogo 
 
   -- Chamada da função escolheTema do módulo Words para obter o tema de palavras escolhido pelo usuário
   categoria <- escolheTema "./data"
@@ -19,8 +18,10 @@ main = do
   -- Cria e imprime estado da partida
   let partida = novaPartida 6 palavraSecreta "" -- cria uma nova partida com 6 chances e a palavra secreta "PALAVRA"
 
- -- Chamada da função hangman do módulo Logic para iniciar o jogo
+  -- Chamada da função hangman do módulo Logic para iniciar o jogo
+  
+  dificuldade<-setDificuldade
 
-  jogo palavraSecreta
+  jogo palavraSecreta dificuldade
 
   print partida
