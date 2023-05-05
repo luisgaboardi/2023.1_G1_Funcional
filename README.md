@@ -17,7 +17,7 @@
 | 19/0038969  |  Victor Hugo Carvalho Silva    |
 | 20/0028677  |  Vitor Manoel Aquino de Brito  |
 
-## Sobre 
+## Sobre
 O jogo da forca é um jogo de adivinhação de palavras em que um jogador escolhe uma palavra secreta e outro jogador tenta adivinhar a palavra, sugerindo letras uma de cada vez. A cada letra incorreta, uma parte do corpo do boneco é desenhada, e o objetivo do jogo é descobrir a palavra antes que ele esteja completo.
 
 O projeto é uma implementação do jogo da forca em Haskell, utilizando conceitos como entrada e saída de dados, manipulação de strings, listas e funções recursivas. A escolha da palavra secreta é feita a partir de uma lista de palavras em português previamente definida, utilizando o modulo Words que contém uma função que seleciona uma palavra de forma aleatória.
@@ -36,7 +36,7 @@ O projeto é uma implementação do jogo da forca em Haskell, utilizando conceit
 ### Demonstração do modo Multiplayer
 ![Peek 2023-05-05 06-35](https://user-images.githubusercontent.com/69691521/236424539-082695b0-08cc-4528-9909-c3fb5ad33e53.gif)
 
-## Instalação 
+## Instalação
 **Linguagens**: Haskell<br>
 **Tecnologias**: Cabal<br>
 
@@ -54,7 +54,7 @@ cabal --version
 ```
 Para mais informações sobre o uso do Cabal, consulte a documentação oficial em [The Haskell Cabal | Overview](https://www.haskell.org/cabal/)
 
-## Uso 
+## Uso
 
 ### 1. Baixe o repositório do git;
 ```
@@ -77,7 +77,7 @@ cabal new-run
 ### 4. Limpe a pasta criada pelo cabal;
 ```
 cabal clean
-```  
+```
 ou
 ```
 cabal new-clean
@@ -86,7 +86,7 @@ cabal new-clean
 
 ## Vídeo
 Adicione 1 ou mais vídeos com a execução do projeto.
-Procure: 
+Procure:
 (i) Introduzir o projeto;
 (ii) Mostrar passo a passo o código, explicando-o, e deixando claro o que é de terceiros, e o que é contribuição real da equipe;
 (iii) Apresentar particularidades do Paradigma, da Linguagem, e das Tecnologias, e
@@ -103,12 +103,12 @@ Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 |  João Victor de Oliveira Matos |Criação do esqueleto do projeto, criação da identidade visual, implemetação da interface e interação, implementação dos níveis de dificuldade, auxílio no módulo de lógica, auxílio na documentação e readme | Excelente |
 |  Kathlyn Lara Murussi          | | |
 |  Luís Guilherme Gaboardi Lins  | | |
-|  Thiago Aparecido Lopes Santos | | |
+|  Thiago Aparecido Lopes Santos | Desenvolvimento da escolha de temas e verificação de inputs válidos no módulo Words | Excelente |
 |  Thiago Siqueira Gomes         | | |
 |  Victor Hugo Carvalho Silva    | | |
 |  Vitor Manoel Aquino de Brito  | | |
 
-## Outros 
+## Outros
 Quaisquer outras informações sobre o projeto podem ser descritas aqui. Não esqueça, entretanto, de informar sobre:
 (i) Lições Aprendidas;
 (ii) Percepções;
