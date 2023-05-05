@@ -34,7 +34,7 @@ O projeto é uma implementação do jogo da forca em Haskell, utilizando conceit
 ### Final da partida
 ![Screenshot from 2023-05-05 05-59-39](https://user-images.githubusercontent.com/69691521/236421236-efef4390-6be9-414f-ab72-2628631e250e.png)
 ### Demonstração do modo Multiplayer
-![Peek 2023-05-05 06-06](https://user-images.githubusercontent.com/69691521/236421292-c4b9f496-c2fb-491b-baca-dcc0958699d8.gif)
+![Peek 2023-05-05 06-35](https://user-images.githubusercontent.com/69691521/236424539-082695b0-08cc-4528-9909-c3fb5ad33e53.gif)
 
 ## Instalação 
 **Linguagens**: Haskell<br>
