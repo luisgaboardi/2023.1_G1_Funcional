@@ -23,31 +23,44 @@ O jogo da forca é um jogo de adivinhação de palavras em que um jogador escolh
 O projeto é uma implementação do jogo da forca em Haskell, utilizando conceitos como entrada e saída de dados, manipulação de strings, listas e funções recursivas. A escolha da palavra secreta é feita a partir de uma lista de palavras em português previamente definida, utilizando o modulo Words que contém uma função que seleciona uma palavra de forma aleatória.
 
 ## Screenshots
-Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcionamento.
+![Screenshot from 2023-05-05 00-55-51](https://user-images.githubusercontent.com/32913216/236375321-48245e61-7103-4fdd-957c-1bf97f3fb7b0.png)
+
+![Screenshot from 2023-05-05 00-57-13](https://user-images.githubusercontent.com/32913216/236375307-b2d07d4f-f034-48ce-aaf6-6e5d58704bb6.png)
+
+![teste](https://user-images.githubusercontent.com/32913216/236376613-ac7e9354-919a-43cd-84e6-4bdecbeaddd7.gif)
+
 
 ## Instalação 
-**Linguagens**: xxxxxx<br>
-**Tecnologias**: xxxxxx<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
-Insira um manual ou um script para auxiliar ainda mais.
-Gifs animados e outras ilustrações são bem-vindos!
+**Linguagens**: Haskell<br>
+**Tecnologias**: Cabal<br>
 
-## Uso 
-Explique como usar seu projeto.
-Procure ilustrar em passos, com apoio de telas do software, seja com base na interface gráfica, seja com base no terminal.
-Nessa seção, deve-se revelar de forma clara sobre o funcionamento do software.
+Para instalar o Cabal, é necessário ter o GHC (Glasgow Haskell Compiler) instalado no sistema operacional. O GHC é o compilador de Haskell padrão e vem com o Cabal.
 
-### 1. Verifique se o GHCup está instalado na seu computador - [Guia de Instalação GHCup](https://www.haskell.org/ghcup)
+```
+curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
+```
+ou acesse [Guia de Instalação GHCup](https://www.haskell.org/ghcup)
+
+Depois de instalado, verifique a versão do Cabal com o seguinte comando:
+
 ```
 cabal --version
 ```
+Para mais informações sobre o uso do Cabal, consulte a documentação oficial em [The Haskell Cabal | Overview](https://www.haskell.org/cabal/)
 
-### 2. Entre na pasta do jogo
+## Uso 
+
+### 1. Baixe o repositório do git;
+```
+git clone https://github.com/UnBParadigmas2023-1/2023.1_G1_Funcional_Hangman.git
+```
+
+### 2. Entre na pasta do jogo;
 ```
 cd 2023.1_G1_Funcional_Hangman
 ```
 
-### 3. Execute a aplicação
+### 3. Execute a aplicação;
 ```
 cabal run
 ```
@@ -55,7 +68,7 @@ ou
 ```
 cabal new-run
 ```
-### 4. Limpe a pasta criada pelo cabal
+### 4. Limpe a pasta criada pelo cabal;
 ```
 cabal clean
 ```  
@@ -79,9 +92,8 @@ TEMPO: +/- 15min
 Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 |Nome do Membro | Contribuição | Significância da Contribuição para o Projeto (Excelente/Boa/Regular/Ruim/Nula) |
 | -- | -- | -- |
-| Fulano  |  Programação dos Fatos da Base de Conhecimento Lógica | Boa |
 |  Douglas Farias de Castro      | | |
-|  Gustavo Duarte Moreira        | | |
+|  Gustavo Duarte Moreira        |Desenvolvimento do módulo de temas com leitura do arquivo; auxílio no móludo de lógica; Documentação e aperfeiçoamento do README.md | Excelente|
 |  João Victor de Oliveira Matos | | |
 |  Kathlyn Lara Murussi          | | |
 |  Luís Guilherme Gaboardi Lins  | | |
@@ -98,5 +110,6 @@ Quaisquer outras informações sobre o projeto podem ser descritas aqui. Não es
 (iV) Trabalhos Futuros.
 
 ## Fontes
-> - Haskell Documentation. Disponível em https://www.haskell.org/documentation/
-> - Cabal User Guide. Disponível em https://cabal.readthedocs.io/en/stable/
+> - Haskell Documentation. Disponível em: https://www.haskell.org/documentation/
+> - Cabal User Guide. Disponível em: https://cabal.readthedocs.io/en/stable/
+> - Regras jogo da Forca. Dispnível em: https://pt.wikipedia.org/wiki/Jogo_da_forca
