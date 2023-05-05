@@ -25,9 +25,12 @@ jogar palavraSecreta estadoAtual letrasErradas = do
         putStr "? "
         palavraTeste <- getLine
         let palavra = map toUpper palavraTeste
-        let (novoEstado, novasLetrasErradas) = estadoPalavra palavraSecreta palavra estadoAtual letrasErradas
-        -- chama a função jogar novamente com o novo estado recusivo
-        jogar palavraSecreta novoEstado novasLetrasErradas
+        if palavra == "DESISTIR" then
+            putStr ("\nVocê Perdeu! A palavra correta era: " ++ palavraSecreta ++ "\n")
+        else do
+            let (novoEstado, novasLetrasErradas) = estadoPalavra palavraSecreta palavra estadoAtual letrasErradas
+            -- chama a função jogar novamente com o novo estado recusivo
+            jogar palavraSecreta novoEstado novasLetrasErradas
 
 
 
