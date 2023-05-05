@@ -93,7 +93,7 @@ Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 |Nome do Membro | Contribuição | Significância da Contribuição para o Projeto (Excelente/Boa/Regular/Ruim/Nula) |
 | -- | -- | -- |
 |  Douglas Farias de Castro      | | |
-|  Gustavo Duarte Moreira        |Desenvolvimento do módulo de temas com leitura do arquivo; auxílio no móludo de lógica; Documentação e aperfeiçoamento do README.md | Exelente|
+|  Gustavo Duarte Moreira        |Desenvolvimento do módulo de temas com leitura do arquivo; auxílio no móludo de lógica; Documentação e aperfeiçoamento do README.md | Excelente|
 |  João Victor de Oliveira Matos | | |
 |  Kathlyn Lara Murussi          | | |
 |  Luís Guilherme Gaboardi Lins  | | |
