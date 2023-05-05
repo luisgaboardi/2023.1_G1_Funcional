@@ -48,3 +48,12 @@ imprimirChances chances = do
   putStr (show chances)
   setSGR [Reset]
   putStrLn "\n"
+
+imprimirLetrasEncontradas :: String -> IO ()
+imprimirLetrasEncontradas estadoAtual = do
+  setSGR [SetColor Foreground Vivid Black]
+  setSGR [SetColor Background Vivid White] 
+  putStr "Tente adivinhar a palavra: "
+  putStr estadoAtual
+  setSGR [Reset]
+  putStrLn "\n" 

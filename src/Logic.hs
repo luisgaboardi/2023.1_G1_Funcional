@@ -4,7 +4,7 @@ import System.Console.ANSI
 import System.Exit(exitSuccess)
 
 import Data.Char (toUpper)
-import Interface (logoJogo, telaFim, imprimirLetrasErradas, imprimirChances)
+import Interface (logoJogo, telaFim, imprimirLetrasErradas, imprimirChances, imprimirLetrasEncontradas)
 import Words (getInputValido)
 
 -- | Função que inicia o jogo
@@ -22,13 +22,8 @@ jogar palavraSecreta estadoAtual letrasErradas chances = do
         
         imprimirChances chances
 
-        -- imprime a palavra secreta
-        setSGR [SetColor Foreground Vivid Black]
-        setSGR [SetColor Background Vivid White] 
-        putStr "Tente adivinhar a palavra: "
-        putStr estadoAtual
-        setSGR [Reset]
-        putStrLn "\n" 
+        imprimirLetrasEncontradas estadoAtual
+        
 
         -- verifica se o usuário acertou a palavra
         if all (`elem` estadoAtual) palavraSecreta then
