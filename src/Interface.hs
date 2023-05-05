@@ -57,3 +57,12 @@ imprimirLetrasEncontradas estadoAtual = do
   putStr estadoAtual
   setSGR [Reset]
   putStrLn "\n" 
+
+imprimirDificuldade :: IO ()
+imprimirDificuldade = do
+  logoJogo
+  putStrLn "\nDificuldades:"
+  putStrLn "[1] Fácil"
+  putStrLn "[2] Moderado"
+  putStrLn "[3] Difícil"
+  putStrLn "\nEscolha a dificuldade: "

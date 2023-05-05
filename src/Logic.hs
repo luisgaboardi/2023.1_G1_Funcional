@@ -4,7 +4,7 @@ import System.Console.ANSI
 import System.Exit(exitSuccess)
 
 import Data.Char (toUpper)
-import Interface (logoJogo, telaFim, imprimirLetrasErradas, imprimirChances, imprimirLetrasEncontradas)
+import Interface (logoJogo, telaFim, imprimirLetrasErradas, imprimirChances, imprimirLetrasEncontradas, imprimirDificuldade)
 import Words (getInputValido)
 
 -- | Função que inicia o jogo
@@ -63,13 +63,7 @@ estadoPalavra secreta palavra estadoAnterior letrasErradas =
 
 setDificuldade :: IO Int
 setDificuldade = do
-    clearFromCursorToScreenBeginning
-    logoJogo
-    putStrLn "\nDificuldades:"
-    putStrLn "[1] Fácil"
-    putStrLn "[2] Moderado"
-    putStrLn "[3] Difícil"
-    putStrLn "\nEscolha a dificuldade: "
+    imprimirDificuldade
     dificuldade<-getInputValido 3
     let chances = case dificuldade of
                     1 -> 15
