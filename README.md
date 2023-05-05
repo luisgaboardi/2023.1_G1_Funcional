@@ -23,12 +23,17 @@ O jogo da forca é um jogo de adivinhação de palavras em que um jogador escolh
 O projeto é uma implementação do jogo da forca em Haskell, utilizando conceitos como entrada e saída de dados, manipulação de strings, listas e funções recursivas. A escolha da palavra secreta é feita a partir de uma lista de palavras em português previamente definida, utilizando o modulo Words que contém uma função que seleciona uma palavra de forma aleatória.
 
 ## Screenshots
-
+### Escolha do modo de jogo
 ![Screenshot from 2023-05-05 05-56-52](https://user-images.githubusercontent.com/69691521/236421181-8c20954a-602f-4336-9960-94f43e694388.png)
+### Escolha da dificuldade
 ![Screenshot from 2023-05-05 05-57-01](https://user-images.githubusercontent.com/69691521/236421208-9d4371cb-bd5e-436e-9eb3-402ab9114cc4.png)
+### Escolha do tema da palavra
 ![Screenshot from 2023-05-05 05-57-11](https://user-images.githubusercontent.com/69691521/236421216-cf557f6a-dd67-4cb6-afbd-ca7b4399285b.png)
+### Começou a partida
 ![Screenshot from 2023-05-05 05-59-19](https://user-images.githubusercontent.com/69691521/236421227-df1708ba-2eea-4e7e-bbd6-3e2ab40fe459.png)
+### Final da partida
 ![Screenshot from 2023-05-05 05-59-39](https://user-images.githubusercontent.com/69691521/236421236-efef4390-6be9-414f-ab72-2628631e250e.png)
+### Demonstração do modo Multiplayer
 ![Peek 2023-05-05 06-06](https://user-images.githubusercontent.com/69691521/236421292-c4b9f496-c2fb-491b-baca-dcc0958699d8.gif)
 
 ## Instalação 
