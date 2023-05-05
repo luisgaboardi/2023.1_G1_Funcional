@@ -18,6 +18,8 @@ jogar :: String -> String -> [Char] -> Int -> IO ()
 jogar palavraSecreta estadoAtual letrasErradas chances = do
     if (chances == 0) then telaFim palavraSecreta 1
     else do
+        logoJogo
+        
         imprimirLetrasErradas $ filter (`notElem` palavraSecreta) letrasErradas
         
         imprimirChances chances
