@@ -21,13 +21,13 @@ getNomesArquivos :: [FilePath] -> IO [(Int, String)]
 getNomesArquivos pathsArquivos = return $ zip [1..] (map takeBaseName pathsArquivos)
 
 getInputValido :: Int -> IO Int
-getInputValido qtdArquivos = do
+getInputValido tamanhoMax = do
     input <- getLine
     case readMaybe input of
-        Just n | n >= 1 && n <= qtdArquivos -> return n
+        Just n | n >= 1 && n <= tamanhoMax -> return n
         _ -> do
             putStrLn "Entrada inválida. Tente novamente."
-            getInputValido qtdArquivos
+            getInputValido tamanhoMax
 
 escolheTema :: FilePath -> IO FilePath
 escolheTema dir = do
@@ -53,9 +53,9 @@ getPalavraAleatoria path = do
 getPalavraEscondida :: IO String
 getPalavraEscondida = do
     putStrLn "\nDigite a palavra para seu oponente tentar adivinhar de acordo com o tema escolhido:"
-    hSetEcho stdin False 
-    palavra <- getLine 
-    hSetEcho stdin True  
+    hSetEcho stdin False
+    palavra <- getLine
+    hSetEcho stdin True
     return palavra
 
 escolheModoDeJogo :: IO Int
