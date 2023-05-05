@@ -39,3 +39,12 @@ imprimirLetrasErradas letrasErradasFiltradas = do
   putStr letrasErradasFiltradas
   setSGR [Reset]
   putStrLn ""
+
+imprimirChances :: Int -> IO ()
+imprimirChances chances = do
+  setSGR [SetColor Foreground Vivid White]
+  setSGR [SetColor Background Vivid Red]
+  putStr "Chances: "
+  putStr (show chances)
+  setSGR [Reset]
+  putStrLn "\n"
