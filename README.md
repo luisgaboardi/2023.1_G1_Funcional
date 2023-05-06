@@ -93,7 +93,8 @@ Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 |  Kathlyn Lara Murussi          | | |
 |  Luís Guilherme Gaboardi Lins  | Participamento no levantamento e decisão da proposta do projeto | Ruim |
 |  Thiago Aparecido Lopes Santos | Desenvolvimento da escolha de temas e verificação de inputs válidos no módulo Words | Excelente |
-|  Thiago Siqueira Gomes         | Desenvolvimento da criação de estado de uma nova partida e criação de funções para imprimir Interface | Excelente ||  Victor Hugo Carvalho Silva    | | |
+|  Thiago Siqueira Gomes         | Desenvolvimento da criação de estado de uma nova partida e criação de funções para imprimir Interface | Excelente |
+|  Victor Hugo Carvalho Silva    | Desenvolvimento das opções dos modos de jogo Single player e Multiplayer, implementação da função de input de palavra sem aparecer no terminal e criação da opção de desistir| Boa |
 |  Vitor Manoel Aquino de Brito  | | |
 
 ## Fontes
