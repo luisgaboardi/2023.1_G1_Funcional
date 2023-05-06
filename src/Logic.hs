@@ -38,10 +38,6 @@ jogar palavraSecreta estadoAtual letrasErradas chances = do
                 let (novoEstado, novasLetrasErradas) = estadoPalavra palavraSecreta palavra estadoAtual letrasErradas
                 -- chama a função jogar novamente com o novo estado recusivo
                 jogar palavraSecreta novoEstado novasLetrasErradas (chances - 1)
-            let palavra = map toUpper palavraTeste
-            let (novoEstado, novasLetrasErradas) = estadoPalavra palavraSecreta palavra estadoAtual letrasErradas
-            -- chama a função jogar novamente com o novo estado recursivo
-            jogar palavraSecreta novoEstado novasLetrasErradas (chances - 1)
 
 -- | Função que retorna a palavra secreta com as letras corretas preenchidas e os traços para as letras não acertadas
 estadoPalavra :: String -> String -> String -> [Char] -> (String, [Char])
