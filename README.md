@@ -87,9 +87,9 @@ cabal new-clean
 Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 |Nome do Membro | Contribuição | Significância da Contribuição para o Projeto (Excelente/Boa/Regular/Ruim/Nula) |
 | -- | -- | -- |
-|  Douglas Farias de Castro      | | |
+|  Douglas Farias de Castro      | Criação do esqueleto do projeto, criação da identidade visual, implemetação da interface e interação, implementação dos níveis de dificuldade, auxílio no módulo de lógica, auxílio na documentação e readme | Excelente |
 |  Gustavo Duarte Moreira        |Desenvolvimento do módulo de temas com leitura do arquivo; auxílio no móludo de lógica; Documentação e aperfeiçoamento do README.md | Excelente|
-|  João Victor de Oliveira Matos |Criação do esqueleto do projeto, criação da identidade visual, implemetação da interface e interação, implementação dos níveis de dificuldade, auxílio no módulo de lógica, auxílio na documentação e readme | Excelente |
+|  João Victor de Oliveira Matos | | Excelente |
 |  Kathlyn Lara Murussi          | | |
 |  Luís Guilherme Gaboardi Lins  | Participamento no levantamento e decisão da proposta do projeto | Ruim |
 |  Thiago Aparecido Lopes Santos | Desenvolvimento da escolha de temas e verificação de inputs válidos no módulo Words | Excelente |
