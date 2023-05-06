@@ -83,19 +83,23 @@ ou
 cabal new-clean
 ```
 
+## Video
+
+[Vídeo do projeto](https://youtu.be/XPIgcruZTpk)
+
 ## Participações
 Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 |Nome do Membro | Contribuição | Significância da Contribuição para o Projeto (Excelente/Boa/Regular/Ruim/Nula) |
 | -- | -- | -- |
 |  Douglas Farias de Castro      | Criação do esqueleto do projeto, criação da identidade visual, implemetação da interface e interação, implementação dos níveis de dificuldade, auxílio no módulo de lógica, auxílio na documentação e readme | Excelente |
-|  Gustavo Duarte Moreira        |Desenvolvimento do módulo de temas com leitura do arquivo; auxílio no móludo de lógica; Documentação e aperfeiçoamento do README.md | Excelente|
-|  João Victor de Oliveira Matos | | Excelente |
-|  Kathlyn Lara Murussi          | | |
+|  Gustavo Duarte Moreira        |Desenvolvimento do módulo de temas com leitura do arquivo; auxílio no módulo de lógica; Documentação e aperfeiçoamento do README.md | Excelente|
+|  João Victor de Oliveira Matos | Criação do modulo de lógica e atualização de dependências | Boa |
+|  Kathlyn Lara Murussi          |Participamento no levantamento e decisão da proposta do projeto | Ruim |
 |  Luís Guilherme Gaboardi Lins  | Participamento no levantamento e decisão da proposta do projeto | Ruim |
 |  Thiago Aparecido Lopes Santos | Desenvolvimento da escolha de temas e verificação de inputs válidos no módulo Words | Excelente |
 |  Thiago Siqueira Gomes         | Desenvolvimento da criação de estado de uma nova partida e criação de funções para imprimir Interface | Excelente |
 |  Victor Hugo Carvalho Silva    | Desenvolvimento das opções dos modos de jogo Single player e Multiplayer, implementação da função de input de palavra sem aparecer no terminal e criação da opção de desistir| Boa |
-|  Vitor Manoel Aquino de Brito  | | |
+|  Vitor Manoel Aquino de Brito  | Participamento no levantamento e decisão da proposta do projeto | Ruim |
 
 ## Fontes
 > - Haskell Documentation. Disponível em: https://www.haskell.org/documentation/
